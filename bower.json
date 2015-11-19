@@ -1,0 +1,31 @@
+{
+  "name": "forked-jekyll-now",
+  "description": "forked version of jekyll-now",
+  "main": "index.js",
+  "authors": [
+    "dev triple helix"
+  ],
+  "license": "ISC",
+  "keywords": [
+   "jekyll",
+    "jekyll-now",
+    "cloudcannon"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "sass-mediaqueries": "~1.6.1",
+    "Responsable-Grid-System": "responsable#~2.2.0"
+  },
+  "dependencies": {
+    "gsap": "~1.18.0"
+  }
+}
