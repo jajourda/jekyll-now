@@ -7,7 +7,7 @@
   ],
   "license": "ISC",
   "keywords": [
-   "jekyll",
+    "jekyll",
     "jekyll-now",
     "cloudcannon"
   ],
@@ -26,6 +26,7 @@
     "Responsable-Grid-System": "responsable#~2.2.0"
   },
   "dependencies": {
-    "gsap": "~1.18.0"
+    "gsap": "~1.18.0",
+    "jquery": "~2.1.4"
   }
 }
