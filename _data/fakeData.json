@@ -1,0 +1,338 @@
+[
+  {
+    "name":"brunch",
+    "sections":[
+      {
+        "name":"main",
+        "items":[
+          {
+            "title":"Fried Chicken & Waffle Sandwich",
+            "description":"Crispy Fried Chicken served Between a Waffle with Honey Bourbon Maple Syrup Smokehouse Bacon, American Cheese & one Fried Egg",
+            "price":12
+          },
+          {
+            "title":"CURE Hash Skillet",
+            "description":"Smoke House Bacon, Sausage and Potato Hash Sautéed with Wild Mushroom & Leeks topped with Scrambled Eggs finished with a Roasted Peppercorn & Sausage Gravy",
+            "price":12
+          },
+          {
+            "title":"The Crispy Mr.",
+            "description":"Rotisserie Hen, Black Forrest Ham, Gruyere Cheese, Cuban Mustard on Challah Bread Battered and Fried   served with Blueberry Lavender Jam",
+            "price":12
+          },
+          {
+            "title":"Turf",
+            "description":"4oz Petit Filet over sautéed Mushrooms & Onions Topped with Hollandaise Sauce, Eggs of Your Choice",
+            "price":16
+          },
+          {
+            "title":"Quiche of the Day",
+            "description":"Chefs Creation",
+            "price":10
+          },
+          {
+            "title":"Omelet",
+            "description":"Black Forrest Ham, Crispy Bacon, Grilled Bermuda Onions, Artichoke Hearts, Mushrooms, Spinach,  Sharp Cheddar and Gruyere Cheese",
+            "price":12
+          }
+        ]
+      },
+      {
+        "name": "salads",
+        "items": [
+          {
+            "title":"CURE",
+            "description":"House Cut Greens, Grilled Bermuda Onions, Artichoke Hearts, Sun Dried Cherries, Marcona Almonds, Crumbled Goat Cheese, finished with Eggplant Croutons & a Honey Champagne Vinaigrette",
+            "price":12
+          },
+          {
+            "title":"Fresh Mozzarella and Roma Tomatoes",
+            "description":"House pulled Mozzarella, Roma Tomatoes, Basil, Balsamic Reduction & Herb Oil",
+            "price":12
+          },
+          {
+            "title":"Ceasar",
+            "description":"Hearts of Romaine, Garlic Herb Croutons topped with Shaved Pecorino",
+            "price":10
+          },
+          {
+            "title":"Chopped Wedge",
+            "description":"Crisp Iceberg, Gorgonzola Crumbles, Cucumbers, Roma Tomatoes, Smokehouse Hearts of Palm, Grilled Bermuda Onions & Artichoke Hearts finished with an Herb Bacon Vinaigrette",
+            "price":12
+          },
+          {
+            "title":"House",
+            "description":"House Cut Greens, Roma Tomato, Cucumber & Shaved Red Onions",
+            "price":8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"lunch",
+    "sections":[
+      {
+        "name": "main",
+        "items": [
+          {
+            "title":"Jersey Pork Roll",
+            "description":"Grilled Taylor Ham, Sunny Side up Egg topped with American Cheese on a Warm Kaiser Roll",
+            "price":10
+          },
+          {
+            "title":"Prime Rib Gyro",
+            "description":"Sauteed Peppers, Mushrooms & Onions, Provolone Cheese and a Horseraddish Ztatziki Sauce in a Grilled Flat Bread  with Au Jus",
+            "price":13
+          },
+          {
+            "title":"Fried Chicken & Waffle Sandwich",
+            "description":"Crispy Fried Chicken served Between a Waffle with Honey Bourbon Maple Syrup Smokehouse Bacon, American Cheese & a Fried Egg",
+            "price":12
+          },
+          {
+            "title":"Porchetta Melt",
+            "description":"Slow Roasted Porchetta,  Grilled Bermuda Onions, Smoked Gouda, Sweet Cherry Peppers Cure Aioli on Grilled Ciabatta with Pork Jus",
+            "price":12
+          },
+          {
+            "title":"CURE All Chicken Sandwich",
+            "description":"Marinated Grilled Chicken, Prosciutto, Sweet Peppers, Provolone Cheese, Roma Tomatoes, Shredded Iceberg Lettuce, Red Onions & Avocado Basil Mayo on Grilled Ciabatta",
+            "price":12
+          },
+          {
+            "title":"CURE Burger",
+            "description":"Sautéed Mushrooms & Onions, Smoke House Bacon and Provolone Cheese on a Toasted Poppy Seed Kaiser Roll with Shoe String Fries",
+            "price":12
+          },
+          {
+            "title":"Farmers Fold",
+            "description":"Crumbled Feta, White Bean Salad, Grillled Artichokes & Bermuda Onions Tomatoes, Cucumbers, House  Greens Tossed in a Herb Vinaigrette with a Avacado Basil Aioli",
+            "price":12
+          },
+          {
+            "title":"Blackened Corvina Sandwich",
+            "description":"Arugula Greens, Roma Tomatoes, Red Onions, Peppadew Aioli on a Poppy Seed Kaiser Roll",
+            "price":12
+          },
+          {
+            "title":"Shrimp Salad Wrap",
+            "description":"Limoncello Aioli, Crumbled Feta,  Iceburg Lettuce and Chopped Tomatoes Served in a Spinach Wrap",
+            "price":13
+          },
+          {
+            "title":"Roma Tomato Pie",
+            "description":"Layered with Crispy Shallots, Chiffonade of Basil, Peppadew Aioli Mozzarella and Sharp Cheddar Cheese Baked in a Savory Pie Crust",
+            "price":12
+          },
+          {
+            "title":"Vodka Penne",
+            "description":"Carved Prosciutto Sauteed with Garlic & Herbs finished with aVodka Tomato Cream Sauce",
+            "price":10
+          },
+          {
+            "title":"Mac & Cheese",
+            "description":"Cavotappi Pasta, Quesso Fresco Cheese Sauce with Parmesan & Bread Crumbs",
+            "price":10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"apps",
+    "sections":[
+      {
+        "name": "appetizers",
+        "items": [
+          {
+            "title":"The CURE All",
+            "description":"Assortment of Cured Meats , Imported Cheeses & Marinated Vegetables",
+            "price":18
+          },
+          {
+            "title":"Steak Tartare",
+            "description":"Dijon Mustard, Truffle Balsamic, Mustard Oil Diced Red Onion, Capers, Diced Egg, Garlic & Herb Crustinis",
+            "price":16
+          },
+          {
+            "title":"Pork Involtini",
+            "description":"Shaved Prosciutto, Bread Crumbs Over Charleston Grits with a Red Wine Espagnole",
+            "price":12
+          },
+          {
+            "title":"Seared Beef Satays",
+            "description":"Cure House Steak Sauce, Over House Chopped Greens",
+            "price":10
+          },
+          {
+            "title":"Tuna Tartare",
+            "description":"Diced Yellow Fin Tuna Tossed in a light Lime Ponzu Sauce Toasted Sesame Seeds, Daikon Sprouts, Crispy Plantain Chips, Avocado Basil Aioli",
+            "price":14
+          },
+          {
+            "title":"The Cure Rockefeller",
+            "description":"Baked House Oysters with Smoke House Bacon, Wilted Kale, Gruyere Mornay & Sherry",
+            "price":12
+          },
+          {
+            "title":"Calamari",
+            "description":"Crispy Calamari tossed with Sliced Sweet or Hot Cherry Peppers",
+            "price":8
+          },
+          {
+            "title":"Mussels",
+            "description":"Sautéed Mussels, White Wine, Garlic &Herbs   14",
+            "price":14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"dinner",
+    "sections":[
+      {
+        "name": "raw bar",
+        "items": [
+          {
+            "title":"Blue Crab Claws",
+            "description":"Cocktail Sauce & Limoncello Aioli",
+            "price":12
+          },
+          {
+            "title":"Shrimp Cocktail",
+            "description":"Cocktail Sauce & a Wedge of Lemon",
+            "price":10
+          },
+          {
+            "title":"Daily Oyster Selection",
+            "description":"Oysters served ½ or Whole Dozen with Cocktail & Mignonette Sauce",
+            "price":10
+          },
+          {
+            "title":"Oyster Shooter",
+            "description":"Absolut Peppar Vodka, Cocktail Sauce, Fresh Lemon, Finished with a Pinch of Roasted Black Pepper",
+            "price":4
+          }
+        ]
+      },
+      {
+        "name": "salads",
+        "items": [
+          {
+            "title":"CURE",
+            "description":"House Cut Greens, Grilled Bermuda Onions, Artichoke Hearts, Sun Dried Cherries, Marcona Almonds, Crumbled Goat Cheese, finished with Eggplant Croutons & a Honey Champagne Vinaigrette",
+            "price":12
+          },
+          {
+            "title":"Fresh Mozzarella and Roma Tomatoes",
+            "description":"House pulled Mozzarella, Roma Tomatoes, Basil, Balsamic Reduction & Herb Oil",
+            "price":12
+          },
+          {
+            "title":"Ceasar",
+            "description":"Hearts of Romaine, Garlic Herb Croutons topped with Shaved Pecorino",
+            "price":10
+          },
+          {
+            "title":"Chopped Wedge",
+            "description":"Crisp Iceberg, Gorgonzola Crumbles, Cucumbers, Roma Tomatoes, Smokehouse Hearts of Palm, Grilled Bermuda Onions & Artichoke Hearts finished with an Herb Bacon Vinaigrette",
+            "price":12
+          },
+          {
+            "title":"House",
+            "description":"House Cut Greens, Roma Tomato, Cucumber & Shaved Red Onions",
+            "price":8
+          }
+        ]
+      },
+      {
+        "name": "from the rotisserie",
+        "items": [
+          {
+            "title":"Prime Rib",
+            "description":"Slow Roasted and Seasoned with our Special Blend of Herbs & Spices with Garlic Roasted Mashed Potatoes, Creamed Kale & Au Jus",
+            "price":30
+          },
+          {
+            "title":"The Hen",
+            "description":"Whole Cornish Game Hen with Sausage Stuffing, Sauteed Bacon & Brussels Sprouts",
+            "price":22
+          },
+          {
+            "title":"Porchetta",
+            "description":"Tender Pork Loin Stuffed with Sweet Sausage, Spinach &Smoked Gouda Wrapped with Smoke House Bacon, accompanied by Charleston Grits, Leek Straws & Pork Jus",
+            "price":21
+          }
+        ]
+      },
+      {
+        "name": "entrees",
+        "items": [
+          {
+            "title": "Yellow Fin Tuna",
+            "description": "Pan Seared over Sautéed Kale, Sweet Peppers & Mushrooms Finished with a Peach Cider Chutney",
+            "price": 24
+          },
+          {
+            "title": "Corvina",
+            "description": "Pan Seared over Herb Roasted Rice topped with Arugula, Pea Tendrils Roasted Red & Yellow Peppers",
+            "price": 20
+          },
+          {
+            "title": "Chicken Citron",
+            "description": "Pan Seared & finished with Citrus Garlic Beurre Blanc & Capers over Angel Hair Pasta Tossed with Roasted Red Tomatoes & Arugula",
+            "price": 18
+          },
+          {
+            "title": "Vodka Penne",
+            "description": "Carved Prosciutto Sauteed with Garlic & Herbs finished Sauce",
+            "price": 16
+          },
+          {
+            "title": "Roma Tomato Pie",
+            "description": "Layered with Crispy Shallots, Chiffonade of Basil, Peppadew Aioli, Mozzarella & Sharp Cheddar Baked in a Savory Pie Crust",
+            "price": 16
+          },
+          {
+            "title": "The CURE Burger",
+            "description": "Sautéed Mushrooms & Onions, Smoke House Bacon and Provolone Cheese on a Toasted Poppy Seed Kaiser Roll with Shoe String Fries",
+            "price": 12
+          }
+        ]
+      },
+      {
+        "name": "usda prime cuts of beef",
+        "items": [
+          {
+            "title": "Filet",
+            "description": "8oz ~Topped with Maitre De' Hotel Butter & a side of CURE’S Signature Steak Sauce ~",
+            "price": 36
+          },
+          {
+            "title": "Sirloin",
+            "description": "10oz ~Topped with Maitre De' Hotel Butter & a side of CURE’S Signature Steak Sauce ~",
+            "price": 23
+          },
+          {
+            "title": "Ribeye",
+            "description": "12oz ~Topped with Maitre De' Hotel Butter & a side of CURE’S Signature Steak Sauce ~",
+            "price": 34
+          },
+          {
+            "title": "Porterhouse",
+            "description": "22oz ~Topped with Maitre De' Hotel Butter & a side of CURE’S Signature Steak Sauce ~",
+            "price": 48
+          },
+          {
+            "title": "Kansas City Strip",
+            "description": "12oz ~Topped with Maitre De' Hotel Butter & a side of CURE’S Signature Steak Sauce ~",
+            "price": 33
+          }
+        ]
+      }
+    ]
+  }
+]
+
