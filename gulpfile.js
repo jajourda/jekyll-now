@@ -27,7 +27,7 @@ gulp.task('lint', function () {
         .pipe(eslint.failOnError());
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts', function () {
     // content
     eyes.inspect('running scripts...');
     gulp.src(assets.public.lib.js)
@@ -36,14 +36,14 @@ gulp.task('scripts', function() {
 
 //get giabellasicon font
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
     // content
     eyes.inspect('running styles...');
     gulp.src(assets.public.lib.css)
         .pipe(gulp.dest('css/vendor/'));
 });
 
-gulp.task('yaml', function() {
+gulp.task('yaml', function () {
     gulp.src('_data/assets.yml')
 
         // content
@@ -55,16 +55,17 @@ gulp.task('yaml', function() {
 });
 
 
-
-
 // Task for building blog when something changed:
-gulp.task('build',['lint','scripts','styles'], shell.task(['bundle exec jekyll build --watch']));
+gulp.task('build', ['lint', 'scripts', 'styles'], shell.task(['bundle exec jekyll build --watch']));
 // Or if you don't use bundle:
 // gulp.task('build', shell.task(['jekyll build --watch']));
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function () {
-    browserSync.init({server: {baseDir: '_site/'}});
+    browserSync.init({
+        server: {baseDir: '_site/'},
+        port:4000
+    });
     // Reloads page when some of the already built files changed:
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
