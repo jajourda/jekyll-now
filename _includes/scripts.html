@@ -1,0 +1,9 @@
+<!--vendor scripts-->
+
+{% for script in site.data.scripts.lib.js %}
+<script src="{{script}}"></script>
+{% endfor %}
+
+<!--my scripts; eventually automate-->
+
+<script src="{{ site.baseurl }}/scripts/src/main.js"></script>

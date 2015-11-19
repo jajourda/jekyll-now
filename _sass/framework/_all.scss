@@ -1,0 +1,39 @@
+//twitter bootstrap framework
+@import 'bootstrap-pre-config';
+
+
+//bower scss
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/responsable-grid-system/scss/responsable";
+@import '../bower_components/sass-mediaqueries/media-queries';
+// endbower
+//@import '../bower_components/icomoon-sass/assets/scss/icomoon';
+
+
+// Variables and mixins for breakpoints.
+@import "_media-queries.scss";
+
+
+
+
+//colors
+@import "colors";
+
+
+//fonts
+@import "fonts";
+
+@import 'icons';
+
+
+//utility classes & mixins
+@import '_utility.scss';
+
+@import 'pad-vert';
+
+//twitter bootstrap config
+@import 'bootstrap-config';
+//responsable configuration
+@import "responsable-config";
+
+

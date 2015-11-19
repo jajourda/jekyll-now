@@ -1,0 +1,275 @@
+.unset-block{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+@mixin unset-block(){
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+@mixin pv($pt, $pb: null) {
+	@if $pb == null{
+		padding-top: $pt;
+		padding-bottom: $pt;
+	}
+	@else{
+		padding-top: $pt;
+		padding-bottom: $pb;
+	}
+}
+
+@mixin mv($mt, $mb: null) {
+	@if $mb == null{
+		margin-top: $mt;
+		margin-bottom: $mt;
+	}
+	@else{
+		margin-top: $mt;
+		margin-bottom: $mb;
+	}
+}
+
+//xs
+@mixin xs($column: null, $pushValue: null, $pullValue: null) {
+  @if $column == null {
+	@include min-screen($xs) {
+	  @content;
+	}
+  } @else{
+	@if $pushValue == null {
+	  @include min-screen($xs) {
+		@include column($column);
+		@content;
+	  }
+	} @else {
+	  @if $pullValue == null {
+		@include min-screen($xs) {
+		  @include column($column);
+		  @include push($pushValue);
+		  @include pull($pushValue);
+		  @content;
+		}
+	  } @else {
+		@include min-screen($xs) {
+		  @include column($column);
+		  @include push($pushValue);
+		  @include pull($pullValue);
+		  @content;
+		}
+	  }
+
+	}
+  }
+
+}
+
+//xsSm
+@mixin xsSm($column: null, $pushValue: null, $pullValue: null) {
+  @if $column == null {
+	@include min-screen($xsSm) {
+	  @content;
+	}
+  } @else{
+	@if $pushValue == null {
+	  @include min-screen($xsSm) {
+		@include column($column);
+		@content;
+	  }
+	} @else {
+	  @if $pullValue == null {
+		@include min-screen($xsSm) {
+		  @include column($column);
+		  @include push($pushValue);
+		  @include pull($pushValue);
+		  @content;
+		}
+	  } @else {
+		@include min-screen($xsSm) {
+		  @include column($column);
+		  @include push($pushValue);
+		  @include pull($pullValue);
+		  @content;
+		}
+	  }
+
+	}
+  }
+
+}
+
+
+
+
+//sm
+@mixin sm($column: null, $pushValue: null, $pullValue: null) {
+	@if $column == null {
+		@include min-screen($sm) {
+			@content;
+		}
+	} @else{
+		@if $pushValue == null {
+		  @include min-screen($sm) {
+		    @include column($column);
+		    @content;
+		  }
+		} @else {
+		  @if $pullValue == null {
+		    @include min-screen($sm) {
+		      @include column($column);
+		      @include push($pushValue);
+		      @include pull($pushValue);
+		      @content;
+		    }
+		  } @else {
+		    @include min-screen($sm) {
+		      @include column($column);
+		      @include push($pushValue);
+		      @include pull($pullValue);
+		      @content;
+		    }
+		  }
+
+		}
+	}
+
+}
+
+//md
+@mixin md($column: null, $pushValue: null, $pullValue: null) {
+	@if $column == null {
+		@include min-screen($md) {
+			@content;
+		}
+	} @else{
+		@if $pushValue == null {
+		  @include min-screen($md) {
+		    @include column($column);
+		    @content;
+		  }
+		} @else {
+		  @if $pullValue == null {
+		    @include min-screen($md) {
+		      @include column($column);
+		      @include push($pushValue);
+		      @include pull($pushValue);
+		      @content;
+		    }
+		  } @else {
+		    @include min-screen($md) {
+		      @include column($column);
+		      @include push($pushValue);
+		      @include pull($pullValue);
+		      @content;
+		    }
+		  }
+
+		}
+	}
+
+}
+
+
+@mixin lg($column: null, $pushValue: null, $pullValue: null) {
+	@if $column == null {
+		@include min-screen($lg) {
+			@content;
+		}
+	} @else{
+		@if $pushValue == null {
+		  @include min-screen($lg) {
+		    @include column($column);
+		    @content;
+		  }
+		} @else {
+		  @if $pullValue == null {
+		    @include min-screen($lg) {
+		      @include column($column);
+		      @include push($pushValue);
+		      @include pull($pushValue);
+		      @content;
+		    }
+		  } @else {
+		    @include min-screen($lg) {
+		      @include column($column);
+		      @include push($pushValue);
+		      @include pull($pullValue);
+		      @content;
+		    }
+		  }
+
+		}
+	}
+
+}
+
+
+@mixin xLg($column: null, $pushValue: null, $pullValue: null) {
+  @if $column == null {
+	@include min-screen($xLg) {
+	  @content;
+	}
+  } @else{
+	@if $pushValue == null {
+	  @include min-screen($xLg) {
+		@include column($column);
+		@content;
+	  }
+	} @else {
+	  @if $pullValue == null {
+		@include min-screen($xLg) {
+		  @include column($column);
+		  @include push($pushValue);
+		  @include pull($pushValue);
+		  @content;
+		}
+	  } @else {
+		@include min-screen($xLg) {
+		  @include column($column);
+		  @include push($pushValue);
+		  @include pull($pullValue);
+		  @content;
+		}
+	  }
+
+	}
+  }
+
+}
+
+
+.hide-min-md{
+  @include md{
+	display: none;
+  }
+}
+.show-min-md{
+  display: none;
+  @include md{
+	display: block;
+  }
+}
+
+//borders
+.bb{
+	border: blue 2px solid;
+}
+.rb{
+	border:firebrick 2px solid;
+}
+.yb {
+	border:goldenrod 2px solid;
+}
+.gb{
+	border:greenyellow 2px solid;
+}

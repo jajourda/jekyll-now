@@ -1,0 +1,13 @@
+//responsable variables
+$g: 2rem !default;
+$p: $g * 0.5;
+$q: $p * 0.5;
+$g2: $g * 2;
+$g3: $g * 3;
+$g4: $g * 4;
+$g5: $g * 5;
+// Set up some default variables
+$columns: 12 !default;
+$gutter_width: $g;
+$max_width: 100%;
+$site_align: center !default;

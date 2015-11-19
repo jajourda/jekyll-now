@@ -1,0 +1,41 @@
+//font-config
+@import "font-config";
+//fonts
+.heading-font{
+  font-family: $heading-font;
+}
+.copy-font{
+  font-family: $copy-font;
+}
+.subheading-font{
+	font-family: $subheading-font;
+}
+.subheading-font-l{
+	font-family: $subheading-font-l;
+	font-size: 1.25em;
+	position: relative;
+	top:-.1em;
+	display:inline-block;
+	width:.85em;
+	&:before{
+		content:"\00a0";
+	}
+}
+
+
+//goldenbook specific
+.gbl-font{
+	font-family:$gbl-font;
+}
+
+.gbr-font{
+	font-family: $gbr-font;
+}
+
+.gbb-font{
+	font-family:$gbb-font;
+}
+
+.cursive-font{
+	font-family: $cursive-font;
+}

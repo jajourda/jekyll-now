@@ -6,8 +6,10 @@ var eyes = require('eyes');
 var yaml = require('gulp-yaml');
 var eslint = require('gulp-eslint');
 var gulpIf = require('gulp-if');
-var assets = require('./assets.js');
+var assets = require('./_data/scripts.json');
 const reload = browserSync.reload;
+
+var data = require('gulp-data');
 
 
 gulp.task('lint', function () {
@@ -15,7 +17,7 @@ gulp.task('lint', function () {
     // So, it's best to have gulp ignore the directory as well.
     // Also, Be sure to return the stream from the task;
     // Otherwise, the task may end before the stream has finished.
-    return gulp.src(['scripts/src/**/*.js'])
+    return gulp.src(assets.js)
         // eslint() attaches the lint output to the "eslint" property
         // of the file object so it can be used by other modules.
         .pipe(eslint())
@@ -27,10 +29,11 @@ gulp.task('lint', function () {
         .pipe(eslint.failOnError());
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts', function() {
     // content
     eyes.inspect('running scripts...');
-    gulp.src(assets.public.lib.js)
+    eyes.inspect(assets.lib.js);
+    gulp.src(assets.lib.js)
         .pipe(gulp.dest('scripts/vendor/'));
 });
 
@@ -39,8 +42,14 @@ gulp.task('scripts', function () {
 gulp.task('styles', function () {
     // content
     eyes.inspect('running styles...');
-    gulp.src(assets.public.lib.css)
+    gulp.src(assets.lib.css)
         .pipe(gulp.dest('css/vendor/'));
+});
+
+gulp.task('json-test', function() {
+    return gulp.src('_data/scripts.json')
+        .pipe(data())
+        .pipe(gulp.dest('scripts/vendor/'));
 });
 
 gulp.task('yaml', function () {

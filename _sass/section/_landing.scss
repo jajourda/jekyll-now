@@ -1,0 +1,19 @@
+.arrow-wrap{
+	@include column(12);
+	// left:0;
+	// top:0;
+	position:relative;
+	figure.landing-arrow{
+		position:absolute;
+		top:0;
+		&.landing-arrow-left{
+			left:0;
+		}
+		&.landing-arrow-right{
+			right:0;
+		}
+		img{
+			width: 100px;
+		}
+	}
+}

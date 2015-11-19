@@ -1,0 +1,85 @@
+//_saying.scss
+//parent or wrapping element
+.official-saying {
+    @include row();
+    figure.logo-wrap {
+        @include unset-block;
+        @include pv(2000px);
+        @include row();
+        //bigger styles
+        @include sm(6);
+        @include md(3);
+    }
+    .our-quote {
+        position: relative;
+        text-align: center;
+        padding-top: $g2;
+        @include lg{
+        	padding-top: $g2 + $g2;
+        };
+        blockquote {
+            border-left: 0;
+            z-index: 3;
+            position: relative;
+            p {
+                @extend .subheading-font;
+                font-size: 4rem;
+            }
+            cite {
+                @extend .heading-font;
+                font-style: normal;
+                text-transform: uppercase;
+                font-weight: 900;
+                display: block;
+                padding-top: $p;
+                @include md{
+                	font-size: 2rem;
+                };
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 8rem;
+                    height: 1rem;
+                    background: $primary
+                    /* darken($secondary-medium, 10%) */
+                    
+                    ;
+                    position: relative;
+                    left: 50%;
+                    margin-left: -4rem;
+                    margin-bottom: $p;
+                    margin-top: $p;
+                    @include md{
+                    	width:16rem;
+                    	margin-left: -8rem;
+                    	margin-bottom: $g;
+                    };
+                }
+            }
+        }
+        span[class|="icon"] {
+            position: absolute;
+            //top:0;
+            //left:15rem;
+            display: block;
+            font-size: 15rem;
+            width: 15rem;
+            height: 15rem;
+            color: darken($secondary-medium, 10%);
+            z-index: 1;
+            @include sm {
+                top: 0;
+                left: 15rem
+            }
+            ;
+            @include lg {
+            	top:$g2;
+                left: 50%;
+                margin-left: -25rem;
+            }
+            ;
+        }
+    }
+}
+
+@import '../modules/saying-slider';

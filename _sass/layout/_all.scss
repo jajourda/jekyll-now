@@ -1,0 +1,40 @@
+// /*
+// */
+
+/* ======= Base ======= */
+
+
+html{
+  height:100%;
+}
+body {
+  //@extend .bb;
+  @include row();
+  height:100%;
+  //padding-top: (($p * 1.75) * 2)+ $p;
+  color: black;
+  @extend .gbr-font;
+  font-size: 12px;
+  background: white;
+  @include sm{
+   // padding-top: (($p * 1.75) * 2)+ $g2;
+  }
+}
+
+.wrapper-base{
+  @include row();
+ @include mv($g2);
+  @include pv($g2);
+}
+
+section.wrapper{
+  @extend .wrapper-base;
+}
+.section-inner{
+  @include column(12);
+  position: relative;
+}
+
+//headings
+@import 'headings';
+

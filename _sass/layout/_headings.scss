@@ -1,0 +1,40 @@
+h1,h2,h3,h4,h5{
+
+}
+
+.headings-m-p{
+  @include mv($g2);
+  @include pv($g2);
+}
+
+h1{
+  @extend .gbl-font;
+  @extend .headings-m-p;
+  font-size:2.2rem;
+  text-transform: uppercase;
+  color:$gold;
+  font-weight: 100;
+  text-align: center;
+  .focus{
+    border-bottom:solid $gold 1px;
+    padding-bottom:$q;
+  }
+  .sub-focus{
+    @extend .cursive-font;
+    font-weight: 100;
+    text-transform: none;
+    display: block;
+    font-size:.6em;
+    margin-top:$g;
+  }
+}
+//pink bg
+.b-pink h1{
+  color:$white;
+  @include sm{
+    font-size:5rem;
+  }
+  .focus{
+    border-bottom-color:$white;
+  }
+}

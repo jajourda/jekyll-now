@@ -1,0 +1,36 @@
+{
+  "name": "forked-jekyll-now",
+  "version": "1.0.0",
+  "description": "forked version of jekyll-now",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jajourda/jekyll-now"
+  },
+  "keywords": [
+    "jekyll",
+    "jekyll-now",
+    "cloudcannon"
+  ],
+  "author": "dev triple helix",
+  "license": "ISC",
+  "homepage": "https://github.com/jajourda/jekyll-now",
+  "devDependencies": {
+    "browser-sync": "^2.9.12",
+    "eslint": "^1.9.0",
+    "eyes": "^0.1.8",
+    "gulp": "^3.9.0",
+    "gulp-data": "^1.2.0",
+    "gulp-eslint": "^1.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-shell": "^0.5.1",
+    "gulp-swig": "^0.7.4",
+    "gulp-yaml": "^1.0.1",
+    "lodash": "^3.10.1",
+    "main-bower-files": "^2.9.0",
+    "path": "^0.12.7"
+  }
+}

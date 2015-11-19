@@ -1,0 +1,18 @@
+{
+  "lib": {
+    "scss": [
+      "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+      "bower_components/Responsable-Grid-System/scss/responsable.scss",
+      "bower_components/sass-mediaqueries/_media-queries.scss"
+    ],
+    "js": [
+      "bower_components/jquery/dist/jquery.min.js"
+    ],
+    "css":[
+
+    ]
+  },
+  "js":[
+    "scripts/src/**/*.js"
+  ]
+}
