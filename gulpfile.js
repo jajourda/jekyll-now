@@ -89,7 +89,7 @@ gulp.task('serve', function () {
     });
     // Reloads page when some of the already built files changed:
     gulp.watch('_site/**/*.*').on('change', function(){
-        browserSync.reload
+        browserSync.reload();
     });
 
     //gulp.watch('_site/**/*.*', function(event){
@@ -104,4 +104,4 @@ gulp.task('serve', function () {
 });
 
 
-gulp.task('default', ['serve','build']);
+gulp.task('default', ['build','serve']);
