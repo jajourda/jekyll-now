@@ -7,6 +7,7 @@ var yaml = require('gulp-yaml');
 var eslint = require('gulp-eslint');
 var gulpIf = require('gulp-if');
 var assets = require('./_data/scripts.json');
+var clean = require('gulp-clean');
 const reload = browserSync.reload;
 
 var data = require('gulp-data');
@@ -63,9 +64,20 @@ gulp.task('yaml', function () {
 
 });
 
+/*<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>*/
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//clean before build
+
+gulp.task('clean',function() {
+    // content
+    return gulp.src('_site/',{read:false})
+      .pipe(clean())
+
+});
+
 
 // Task for building blog when something changed:
-gulp.task('build', ['lint', 'scripts', 'styles'], shell.task(['bundle exec jekyll build --watch']));
+gulp.task('build', ['clean','lint', 'scripts', 'styles'], shell.task(['bundle exec jekyll build --watch']));
 // Or if you don't use bundle:
 // gulp.task('build', shell.task(['jekyll build --watch']));
 
@@ -76,7 +88,20 @@ gulp.task('serve', function () {
         port:4000
     });
     // Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+    gulp.watch('_site/**/*.*').on('change', function(){
+        browserSync.reload
+    });
+
+    //gulp.watch('_site/**/*.*', function(event){
+    //    eyes.inspect(event);
+    //    browserSync.reload
+    //});
+    //
+    //gulp.watch('_site/**/*.*').on('delete', function(){
+    //    eyes.inspect('i was added');
+    //});
+
 });
 
-gulp.task('default', ['build', 'serve']);
+
+gulp.task('default', ['serve','build']);

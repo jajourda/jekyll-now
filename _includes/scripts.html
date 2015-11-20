@@ -5,5 +5,8 @@
 {% endfor %}
 
 <!--my scripts; eventually automate-->
+{% for script in site.data.scripts.js %}
+<script src="{{script}}"></script>
+{% endfor %}
 
-<script src="{{ site.baseurl }}/scripts/src/main.js"></script>
+

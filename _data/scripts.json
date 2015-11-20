@@ -13,6 +13,6 @@
     ]
   },
   "js":[
-    "scripts/src/**/*.js"
+    "scripts/src/main.js"
   ]
 }
